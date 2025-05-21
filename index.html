@@ -165,9 +165,28 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by grounding responses with retrieved information. As an emerging paradigm, Agentic RAG further enhances this process by introducing autonomous LLM agents into the information seeking process. However, existing benchmarks fall short in evaluating such systems, as they are confined to a static retrieval environment with a fixed, limited corpus and simple queries that fail to elicit agentic behavior. Moreover, their evaluation protocols assess information seeking effectiveness by pre-defined gold sets of documents, making them unsuitable for the open-ended and dynamic nature of real-world web environments. To bridge this gap, we present InfoDeepSeek, a new benchmark with challenging questions designed for assessing agentic information seeking in real-world, dynamic web environments. We propose a systematic methodology for constructing challenging queries satisfying the criteria of determinacy, difficulty, and diversity. Based on this, we develop the first evaluation framework tailored to dynamic agentic information seeking, including fine-grained metrics about the accuracy, utility, and compactness of information seeking outcomes. Through extensive experiments across LLMs, search engines, and question types, InfoDeepSeek reveals nuanced agent behaviors and offers actionable insights for future research.
+            Retrieval-Augmented Generation (RAG) enhances large language models (LLMs) by grounding responses with
+              retrieved information. As an emerging paradigm, Agentic RAG further enhances this process by introducing
+              autonomous LLM agents into the information seeking process. However, existing benchmarks fall short in
+              evaluating such systems, as they are confined to a static retrieval environment with a fixed, limited
+              corpus and simple queries that fail to elicit agentic behavior. Moreover, their evaluation protocols
+              assess information seeking effectiveness by pre-defined gold sets of documents, making them unsuitable
+              for the open-ended and dynamic nature of real-world web environments. To bridge this gap, we present
+              InfoDeepSeek, a new benchmark with challenging questions designed for assessing agentic information
+              seeking in real-world, dynamic web environments. We propose a systematic methodology for constructing
+              challenging queries satisfying the criteria of determinacy, difficulty, and diversity. Based on this,
+              we develop the first evaluation framework tailored to dynamic agentic information seeking, including
+              fine-grained metrics about the accuracy, utility, and compactness of information seeking outcomes.
+              Through extensive experiments across LLMs, search engines, and question types, InfoDeepSeek reveals
+              nuanced agent behaviors and offers actionable insights for future research.
           </p>
         </div>
+            <a href="" target="_blank" rel="external">
+              <img class="center-block org-banner" src="static/images/comparison.png">
+            </a>
+            <p style="text-align: center;">
+              Figure 1: Comparison between traditional RAG benchmark (up) and our <strong><em>InfoDeepSeek</em></strong> (bottom).
+            </p>
       </div>
     </div>
   </div>
@@ -180,19 +199,17 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Our Dataset</h2>
           <div class="content has-text-justified">
-            <a href="https://arxiv.org/abs/2401.07950" target="_blank" rel="external">
+            <a href="" target="_blank" rel="external">
               <img class="center-block org-banner" src="static/images/construction.png">
             </a>
             <p>
-              Figure 1: The pipeline of constructing <strong><em>InfoDeepSeek</em></strong>, where questions are
+              Figure 2: The pipeline of constructing <strong><em>InfoDeepSeek</em></strong>, where questions are
               carefully designed to satisfy three criteria: <em>Determinacy, Difficulty, and Diversity</em>.
               To achieve this, We begin by extracting anchor and ordinary knowledge from web sources,
               based on which we leverage anchor-based and diversity-based combination to construct draft questions.
               These draft questions are then subjected to two key filtering stages: determinacy check and difficulty
               check. Questions that pass both filters are retained as candidates, and subsequently go through a
               multi-stage validation process.
-
-
             </p>
           </div>
         </div>
@@ -213,7 +230,7 @@
               >
             </a>
             <p style="text-align: center;">
-              Figure 2: Different question attributes and their ratios in <strong><em>InfoDeepSeek</em></strong>.
+              Table 1: Different question attributes and their ratios in <strong><em>InfoDeepSeek</em></strong>.
 
 
 
